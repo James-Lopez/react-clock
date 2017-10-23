@@ -3,7 +3,7 @@ const times = areas =>
     zone: zone.split('/')[1].replace('_', ' '),
     time: moment()
       .tz(zone)
-      .format('hh:mm:ss a')
+      .format('hh:mm:ssa')
   }))
 
 const render = time =>
@@ -19,9 +19,9 @@ const timezones = () => {
 }
 
 setInterval(() => {
-  const welcome = moment().format('dddd MMMM Do YYYY')
+  const welcome = moment().format('dddd, MMMM Do, YYYY')
   document.querySelector('#date').innerHTML = ''
-  document.querySelector('#date').textContent = welcome
+  document.querySelector('#date').textContent = `Welcome today is ${welcome}`
 }, 16)
 
 setInterval(() => {
