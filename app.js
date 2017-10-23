@@ -4,9 +4,10 @@ const app = express()
 
 MongoClient.connect('mongodb://localhost/clock', (error, db) => {
   app.use(express.static('./public'))
+  const timezones = db.collection('timezones')
 
-  app.get('/', (req, res) => {
-    collection.find({}, { _id: 0 }).toArray()
+  app.get('/times', (req, res) => {
+    timezones.find({}, { _id: 0 }).toArray()
       .then(result =>
         res.send(
           result.reduce((zones, document) => [...zones, document.zone], [])
@@ -14,6 +15,6 @@ MongoClient.connect('mongodb://localhost/clock', (error, db) => {
       )
     })
 
-  app.listen(1738)
+  app.listen(1738, console.log('Open on port 1738'))
 
 })

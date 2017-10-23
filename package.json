@@ -2,9 +2,9 @@
   "name": "clock",
   "version": "1.0.0",
   "description": "A website for people who want to view many times in different timezones.",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "start": "nodemon app.js",
+    "watch": "nodemon",
     "seed": "node seed.js"
   },
   "repository": {
