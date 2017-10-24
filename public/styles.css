@@ -1,0 +1,54 @@
+html,
+body {
+  height: 100vh;
+  margin: 0;
+  font-size: 10px;
+}
+
+#date {
+  height: 8vh;
+  width: 100vw;
+  background-color: #2385f1;
+  text-align: center;
+  text-shadow: 0 0 3rem rgba(10, 175, 230, 1);
+  font-family: 'Share Tech Mono', monospace;
+  color: #fff;
+}
+
+.times {
+  height: 92vh;
+  width: 100vw;
+}
+
+.time {
+  float: left;
+  position: relative;
+  background: #0f3854;
+  background: radial-gradient(ellipse at center, #e0e0e0 0%, #2385f1 70%);
+  background-size: 100%;
+  text-align: center;
+  width: calc(100vw / 3);
+  height: calc(92vh / 3);
+}
+
+.value {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 2rem;
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 0 0 3rem rgba(10, 175, 230, 1);
+}
+
+@media (min-width: 400px) {
+  .value {
+    font-size: 4rem;
+  }
+
+  #date {
+    font-size: 4rem;
+  }
+}

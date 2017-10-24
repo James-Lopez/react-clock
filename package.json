@@ -1,0 +1,28 @@
+{
+  "name": "clock",
+  "version": "1.0.0",
+  "description": "A website for people who want to view many times in different timezones.",
+  "main": "app.js",
+  "scripts": {
+    "watch": "nodemon",
+    "seed": "node seed.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/James-Lopez/clock.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/James-Lopez/clock/issues"
+  },
+  "homepage": "https://github.com/James-Lopez/clock#readme",
+  "devDependencies": {
+    "nodemon": "^1.12.1"
+  },
+  "dependencies": {
+    "express": "^4.16.2",
+    "mongodb": "^2.2.33"
+  }
+}
