@@ -6,21 +6,17 @@ body {
 }
 
 #date {
-  height: 15vh;
+  height: 8vh;
   width: 100vw;
-  background: #0f3854;
-  background: radial-gradient(ellipse at center, #0a2e38 0%, #000 70%);
-  background-size: 100%;
+  background-color: #2385f1;
   text-align: center;
   text-shadow: 0 0 3rem rgba(10, 175, 230, 1);
   font-family: 'Share Tech Mono', monospace;
-  font-size: 4rem;
   color: #fff;
-  padding-top: 18px;
 }
 
 .times {
-  height: 85vh;
+  height: 92vh;
   width: 100vw;
 }
 
@@ -28,11 +24,11 @@ body {
   float: left;
   position: relative;
   background: #0f3854;
-  background: radial-gradient(ellipse at center, #0a2e38 0%, #000 70%);
+  background: radial-gradient(ellipse at center, #e0e0e0 0%, #2385f1 70%);
   background-size: 100%;
   text-align: center;
   width: calc(100vw / 3);
-  height: calc(100vh / 3);
+  height: calc(92vh / 3);
 }
 
 .value {
@@ -47,8 +43,12 @@ body {
   text-shadow: 0 0 3rem rgba(10, 175, 230, 1);
 }
 
-@media (min-width: 600px) {
+@media (min-width: 400px) {
   .value {
+    font-size: 4rem;
+  }
+
+  #date {
     font-size: 4rem;
   }
 }

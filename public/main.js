@@ -24,14 +24,19 @@ setInterval(() => {
   document.querySelector('#date').textContent = `Welcome today is ${welcome}`
 }, 16)
 
-setInterval(() => {
-  timezones()
-    .then(data => times(data))
-    .then(data => data.map(render))
-    .then(data => {
-      document.querySelector('#times').innerHTML = ''
-      data.forEach(element => {
-        document.querySelector('#times').appendChild(element)
+const init = () => {
+  const promise = timezones()
+  setInterval(() => {
+    promise
+      .then(data => times(data))
+      .then(data => data.map(render))
+      .then(data => {
+        document.querySelector('#times').innerHTML = ''
+        data.forEach(element => {
+          document.querySelector('#times').appendChild(element)
+        })
       })
-    })
-}, 16)
+  }, 16)
+}
+
+init()
