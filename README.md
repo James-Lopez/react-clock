@@ -20,4 +20,4 @@ $ npm start
 * Node.js
 
 ## Screenshot
-![screen shot 2017-10-24 at 11 33 46 am](https://user-images.githubusercontent.com/31416056/31961438-9745bdf0-b8af-11e7-8546-6c552f8cdd4a.png)
+![screen shot 2017-10-24 at 12 55 46 pm](https://user-images.githubusercontent.com/31416056/31964986-baaa53a4-b8ba-11e7-8c4a-abcb215dd21d.png)
