@@ -5,18 +5,8 @@ body {
   font-size: 10px;
 }
 
-#date {
-  height: 8vh;
-  width: 100vw;
-  background-color: #2385f1;
-  text-align: center;
-  text-shadow: 0 0 3rem rgba(10, 175, 230, 1);
-  font-family: 'Share Tech Mono', monospace;
-  color: #fff;
-}
-
 .times {
-  height: 92vh;
+  height: 100vh;
   width: 100vw;
 }
 
@@ -28,7 +18,7 @@ body {
   background-size: 100%;
   text-align: center;
   width: calc(100vw / 3);
-  height: calc(92vh / 3);
+  height: calc(100vh / 3);
 }
 
 .value {
