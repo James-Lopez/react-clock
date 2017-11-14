@@ -29,7 +29,7 @@ class WorldClocks extends React.Component {
   }
   render() {
     return this.state.zones.map(zone => (
-      <div className="time">
+      <div className="time" key={zone.zone}>
         <div className="value">
           {zone.zone} {''} {zone.time}
         </div>
