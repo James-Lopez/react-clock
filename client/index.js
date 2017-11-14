@@ -39,3 +39,32 @@ class WorldClocks extends React.Component {
 }
 
 ReactDOM.render(<WorldClocks />, document.querySelector('#times'))
+
+class Welcome extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      time: new Date(),
+      date: moment().format('dddd, MMMM Do, YYYY')
+    }
+  }
+  componentDidMount() {
+    this.intervalID = setInterval(() => this.tick(), 1000)
+  }
+  componentWillUnmount() {
+    clearInterval(this.intervalID)
+  }
+  tick() {
+    this.setState({ time: new Date() })
+  }
+  render() {
+    return (
+      <div>
+        Today is {this.state.date} local time is{' '}
+        {this.state.time.toLocaleTimeString()}
+      </div>
+    )
+  }
+}
+
+ReactDOM.render(<Welcome />, document.querySelector('#welcome'))

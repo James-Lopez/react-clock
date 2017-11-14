@@ -21,4 +21,4 @@ $ npm run watch
 * Node.js
 
 ## Screenshot
-![screen shot 2017-11-14 at 12 47 06 pm](https://user-images.githubusercontent.com/31416056/32803915-fc36a31a-c939-11e7-8ef0-eb82e8279e08.png)
+![screen shot 2017-11-14 at 1 50 15 pm](https://user-images.githubusercontent.com/31416056/32806860-d3173414-c942-11e7-95d8-e2b6241f841d.png)
