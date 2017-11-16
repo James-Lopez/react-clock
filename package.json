@@ -1,28 +1,42 @@
 {
-  "name": "clock",
+  "name": "react-clock",
   "version": "1.0.0",
-  "description": "A website for people who want to view many times in different timezones.",
+  "description":
+    "A website for people who want to view many times in different timezones.",
   "main": "app.js",
   "scripts": {
-    "watch": "nodemon",
-    "seed": "node seed.js"
+    "seed": "node server/seed.js",
+    "bundle:watch":
+      "watchify client/index.js -vd -t babelify -o server/public/bundle.js ",
+    "start": "nodemon server/app.js",
+    "watch": "npm-run-all --parallel bundle:watch start"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/James-Lopez/clock.git"
+    "url": "git+https://github.com/James-Lopez/react-clock.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "James-Lopez",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/James-Lopez/clock/issues"
+    "url": "https://github.com/James-Lopez/react-clock/issues"
   },
-  "homepage": "https://github.com/James-Lopez/clock#readme",
+  "homepage": "https://github.com/James-Lopez/react-clock#readme",
   "devDependencies": {
-    "nodemon": "^1.12.1"
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "express": "^4.16.2",
+    "mongodb": "^2.2.33",
+    "nodemon": "^1.12.1",
+    "npm-run-all": "^4.1.2",
+    "watchify": "^3.9.0"
   },
   "dependencies": {
+    "babel-core": "6.26.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "6.26.0",
+    "babelify": "8.0.0",
+    "browserify": "14.5.0",
     "express": "^4.16.2",
-    "mongodb": "^2.2.33"
+    "react": "^16.1.1",
+    "react-dom": "^16.1.1"
   }
 }
